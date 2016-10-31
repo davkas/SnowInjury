@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		7646613C1DC734B0005BB2EB /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */; };
 		7646613E1DC7358C005BB2EB /* SnowInjury.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7646613D1DC7358C005BB2EB /* SnowInjury.pch */; };
+		7646615A1DC745DF005BB2EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 764661591DC745DF005BB2EB /* AppDelegate.m */; };
+		7646615D1DC745DF005BB2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7646615C1DC745DF005BB2EB /* main.m */; };
+		7646615F1DC745DF005BB2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7646615E1DC745DF005BB2EB /* Assets.xcassets */; };
+		764661621DC745DF005BB2EB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764661601DC745DF005BB2EB /* MainMenu.xib */; };
+		764661681DC74AE7005BB2EB /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */; };
+		764661691DC74AE7005BB2EB /* OHHTTPStubs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7646616A1DC74AE7005BB2EB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28161DC72914005C9F69 /* Result.framework */; };
+		7646616B1DC74AE7005BB2EB /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28161DC72914005C9F69 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7646616C1DC74AE7005BB2EB /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */; };
+		7646616D1DC74AE7005BB2EB /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7646616E1DC74AE7005BB2EB /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28121DC72903005C9F69 /* Mantle.framework */; };
+		7646616F1DC74AE7005BB2EB /* Mantle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28121DC72903005C9F69 /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		764661711DC74BA0005BB2EB /* SnowInjury.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28061DC7267E005C9F69 /* SnowInjury.framework */; };
+		764661721DC74BA0005BB2EB /* SnowInjury.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28061DC7267E005C9F69 /* SnowInjury.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		764661771DC76AF0005BB2EB /* TestAppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 764661761DC76AF0005BB2EB /* TestAppConstants.m */; };
+		7646617A1DC76CB3005BB2EB /* SQRLTestUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 764661791DC76CB3005BB2EB /* SQRLTestUpdate.m */; };
 		76DA280B1DC7267E005C9F69 /* SnowInjury.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28091DC7267E005C9F69 /* SnowInjury.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76DA28131DC72903005C9F69 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28121DC72903005C9F69 /* Mantle.framework */; };
 		76DA28151DC7290C005C9F69 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */; };
@@ -49,9 +65,48 @@
 		76DA28691DC73197005C9F69 /* SQRLAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28671DC73197005C9F69 /* SQRLAuthorization.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		764661731DC74BA0005BB2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76DA27FD1DC7267E005C9F69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76DA28051DC7267E005C9F69;
+			remoteInfo = SnowInjury;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		764661701DC74AE7005BB2EB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				764661691DC74AE7005BB2EB /* OHHTTPStubs.framework in Embed Frameworks */,
+				764661721DC74BA0005BB2EB /* SnowInjury.framework in Embed Frameworks */,
+				7646616F1DC74AE7005BB2EB /* Mantle.framework in Embed Frameworks */,
+				7646616D1DC74AE7005BB2EB /* ReactiveCocoa.framework in Embed Frameworks */,
+				7646616B1DC74AE7005BB2EB /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		7646613D1DC7358C005BB2EB /* SnowInjury.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowInjury.pch; sourceTree = "<group>"; };
+		764661561DC745DE005BB2EB /* SnowInjuryTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowInjuryTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		764661581DC745DF005BB2EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		764661591DC745DF005BB2EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7646615C1DC745DF005BB2EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7646615E1DC745DF005BB2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		764661611DC745DF005BB2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		764661631DC745DF005BB2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764661751DC76AF0005BB2EB /* TestAppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppConstants.h; sourceTree = "<group>"; };
+		764661761DC76AF0005BB2EB /* TestAppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppConstants.m; sourceTree = "<group>"; };
+		764661781DC76CB3005BB2EB /* SQRLTestUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLTestUpdate.h; sourceTree = "<group>"; };
+		764661791DC76CB3005BB2EB /* SQRLTestUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLTestUpdate.m; sourceTree = "<group>"; };
 		76DA28061DC7267E005C9F69 /* SnowInjury.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnowInjury.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DA28091DC7267E005C9F69 /* SnowInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowInjury.h; sourceTree = "<group>"; };
 		76DA280A1DC7267E005C9F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +150,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		764661531DC745DE005BB2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7646616A1DC74AE7005BB2EB /* Result.framework in Frameworks */,
+				764661711DC74BA0005BB2EB /* SnowInjury.framework in Frameworks */,
+				7646616E1DC74AE7005BB2EB /* Mantle.framework in Frameworks */,
+				764661681DC74AE7005BB2EB /* OHHTTPStubs.framework in Frameworks */,
+				7646616C1DC74AE7005BB2EB /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76DA28021DC7267E005C9F69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,6 +176,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		764661571DC745DF005BB2EB /* SnowInjuryTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				764661781DC76CB3005BB2EB /* SQRLTestUpdate.h */,
+				764661791DC76CB3005BB2EB /* SQRLTestUpdate.m */,
+				764661751DC76AF0005BB2EB /* TestAppConstants.h */,
+				764661761DC76AF0005BB2EB /* TestAppConstants.m */,
+				764661581DC745DF005BB2EB /* AppDelegate.h */,
+				764661591DC745DF005BB2EB /* AppDelegate.m */,
+				7646615E1DC745DF005BB2EB /* Assets.xcassets */,
+				764661601DC745DF005BB2EB /* MainMenu.xib */,
+				764661631DC745DF005BB2EB /* Info.plist */,
+				7646615B1DC745DF005BB2EB /* Supporting Files */,
+			);
+			path = SnowInjuryTestApp;
+			sourceTree = "<group>";
+		};
+		7646615B1DC745DF005BB2EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7646615C1DC745DF005BB2EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		76DA27FC1DC7267E005C9F69 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +208,7 @@
 				76DA282A1DC72EB7005C9F69 /* ShipIt */,
 				76DA28111DC728CD005C9F69 /* FrameWork */,
 				76DA28081DC7267E005C9F69 /* SnowInjury */,
+				764661571DC745DF005BB2EB /* SnowInjuryTestApp */,
 				76DA28071DC7267E005C9F69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				76DA28061DC7267E005C9F69 /* SnowInjury.framework */,
+				764661561DC745DE005BB2EB /* SnowInjuryTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +411,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		764661551DC745DE005BB2EB /* SnowInjuryTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764661641DC745DF005BB2EB /* Build configuration list for PBXNativeTarget "SnowInjuryTestApp" */;
+			buildPhases = (
+				764661521DC745DE005BB2EB /* Sources */,
+				764661531DC745DE005BB2EB /* Frameworks */,
+				764661541DC745DE005BB2EB /* Resources */,
+				764661701DC74AE7005BB2EB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				764661741DC74BA0005BB2EB /* PBXTargetDependency */,
+			);
+			name = SnowInjuryTestApp;
+			productName = SnowInjuryTestApp;
+			productReference = 764661561DC745DE005BB2EB /* SnowInjuryTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		76DA28051DC7267E005C9F69 /* SnowInjury */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76DA280E1DC7267E005C9F69 /* Build configuration list for PBXNativeTarget "SnowInjury" */;
@@ -341,9 +454,14 @@
 		76DA27FD1DC7267E005C9F69 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = davkas;
 				TargetAttributes = {
+					764661551DC745DE005BB2EB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					76DA28051DC7267E005C9F69 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
@@ -356,6 +474,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 76DA27FC1DC7267E005C9F69;
 			productRefGroup = 76DA28071DC7267E005C9F69 /* Products */;
@@ -363,11 +482,21 @@
 			projectRoot = "";
 			targets = (
 				76DA28051DC7267E005C9F69 /* SnowInjury */,
+				764661551DC745DE005BB2EB /* SnowInjuryTestApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		764661541DC745DE005BB2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7646615F1DC745DF005BB2EB /* Assets.xcassets in Resources */,
+				764661621DC745DF005BB2EB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76DA28041DC7267E005C9F69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,6 +507,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		764661521DC745DE005BB2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7646617A1DC76CB3005BB2EB /* SQRLTestUpdate.m in Sources */,
+				7646615D1DC745DF005BB2EB /* main.m in Sources */,
+				764661771DC76AF0005BB2EB /* TestAppConstants.m in Sources */,
+				7646615A1DC745DF005BB2EB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76DA28011DC7267E005C9F69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,7 +544,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		764661741DC74BA0005BB2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76DA28051DC7267E005C9F69 /* SnowInjury */;
+			targetProxy = 764661731DC74BA0005BB2EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		764661601DC745DF005BB2EB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764661611DC745DF005BB2EB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		764661651DC745DF005BB2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SnowInjuryTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.davkas.SnowInjuryTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		764661661DC745DF005BB2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SnowInjuryTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.davkas.SnowInjuryTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		76DA280C1DC7267E005C9F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,6 +708,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = SnowInjury/SnowInjury.pch;
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = SnowInjury/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -540,6 +734,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = SnowInjury/SnowInjury.pch;
 				INFOPLIST_FILE = SnowInjury/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -553,6 +748,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		764661641DC745DF005BB2EB /* Build configuration list for PBXNativeTarget "SnowInjuryTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764661651DC745DF005BB2EB /* Debug */,
+				764661661DC745DF005BB2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		76DA28001DC7267E005C9F69 /* Build configuration list for PBXProject "SnowInjury" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
