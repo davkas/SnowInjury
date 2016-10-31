@@ -1,0 +1,4 @@
+github "ReactiveCocoa/ReactiveCocoa"
+github "Mantle/Mantle"
+github "Quick/Nimble"
+github "AliSoftware/OHHTTPStubs"

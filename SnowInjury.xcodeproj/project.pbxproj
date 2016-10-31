@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7646613C1DC734B0005BB2EB /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */; };
+		7646613E1DC7358C005BB2EB /* SnowInjury.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7646613D1DC7358C005BB2EB /* SnowInjury.pch */; };
+		76DA280B1DC7267E005C9F69 /* SnowInjury.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28091DC7267E005C9F69 /* SnowInjury.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76DA28131DC72903005C9F69 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28121DC72903005C9F69 /* Mantle.framework */; };
+		76DA28151DC7290C005C9F69 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */; };
+		76DA28171DC72914005C9F69 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA28161DC72914005C9F69 /* Result.framework */; };
+		76DA281D1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA281B1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.h */; };
+		76DA281E1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA281C1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.m */; };
+		76DA28241DC72E65005C9F69 /* SQRLZipArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28221DC72E65005C9F69 /* SQRLZipArchiver.h */; };
+		76DA28251DC72E65005C9F69 /* SQRLZipArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28231DC72E65005C9F69 /* SQRLZipArchiver.m */; };
+		76DA28281DC72E95005C9F69 /* SQRLShipItLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28261DC72E95005C9F69 /* SQRLShipItLauncher.h */; };
+		76DA28291DC72E95005C9F69 /* SQRLShipItLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28271DC72E95005C9F69 /* SQRLShipItLauncher.m */; };
+		76DA28331DC72FB9005C9F69 /* ShipIt-main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA282B1DC72FB9005C9F69 /* ShipIt-main.m */; };
+		76DA28341DC72FB9005C9F69 /* SQRLInstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA282C1DC72FB9005C9F69 /* SQRLInstaller.h */; };
+		76DA28351DC72FB9005C9F69 /* SQRLInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA282D1DC72FB9005C9F69 /* SQRLInstaller.m */; };
+		76DA28361DC72FB9005C9F69 /* SQRLInstaller+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA282E1DC72FB9005C9F69 /* SQRLInstaller+Private.h */; };
+		76DA28371DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA282F1DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.h */; };
+		76DA28381DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28301DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.m */; };
+		76DA28391DC72FB9005C9F69 /* SQRLTerminationListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28311DC72FB9005C9F69 /* SQRLTerminationListener.h */; };
+		76DA283A1DC72FB9005C9F69 /* SQRLTerminationListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28321DC72FB9005C9F69 /* SQRLTerminationListener.m */; };
+		76DA28411DC7301B005C9F69 /* SQRLDownloadedUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA283B1DC7301B005C9F69 /* SQRLDownloadedUpdate.h */; };
+		76DA28421DC7301B005C9F69 /* SQRLDownloadedUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA283C1DC7301B005C9F69 /* SQRLDownloadedUpdate.m */; };
+		76DA28431DC7301B005C9F69 /* SQRLUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA283D1DC7301B005C9F69 /* SQRLUpdate.h */; };
+		76DA28441DC7301B005C9F69 /* SQRLUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA283E1DC7301B005C9F69 /* SQRLUpdate.m */; };
+		76DA28451DC7301B005C9F69 /* SQRLUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA283F1DC7301B005C9F69 /* SQRLUpdater.h */; };
+		76DA28461DC7301B005C9F69 /* SQRLUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28401DC7301B005C9F69 /* SQRLUpdater.m */; };
+		76DA28511DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA284D1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.h */; };
+		76DA28521DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA284E1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.m */; };
+		76DA28531DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA284F1DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.h */; };
+		76DA28541DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28501DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.m */; };
+		76DA28571DC7311E005C9F69 /* SQRLCodeSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28551DC7311E005C9F69 /* SQRLCodeSignature.h */; };
+		76DA28581DC7311E005C9F69 /* SQRLCodeSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28561DC7311E005C9F69 /* SQRLCodeSignature.m */; };
+		76DA285D1DC7314F005C9F69 /* SQRLDirectoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28591DC7314F005C9F69 /* SQRLDirectoryManager.h */; };
+		76DA285E1DC7314F005C9F69 /* SQRLDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA285A1DC7314F005C9F69 /* SQRLDirectoryManager.m */; };
+		76DA285F1DC7314F005C9F69 /* SQRLShipItRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA285B1DC7314F005C9F69 /* SQRLShipItRequest.h */; };
+		76DA28601DC7314F005C9F69 /* SQRLShipItRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA285C1DC7314F005C9F69 /* SQRLShipItRequest.m */; };
+		76DA28641DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28621DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.h */; };
+		76DA28651DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28631DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.m */; };
+		76DA28681DC73197005C9F69 /* SQRLAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA28661DC73197005C9F69 /* SQRLAuthorization.h */; };
+		76DA28691DC73197005C9F69 /* SQRLAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28671DC73197005C9F69 /* SQRLAuthorization.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		7646613D1DC7358C005BB2EB /* SnowInjury.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowInjury.pch; sourceTree = "<group>"; };
+		76DA28061DC7267E005C9F69 /* SnowInjury.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnowInjury.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DA28091DC7267E005C9F69 /* SnowInjury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowInjury.h; sourceTree = "<group>"; };
+		76DA280A1DC7267E005C9F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76DA28121DC72903005C9F69 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/Mac/Mantle.framework; sourceTree = "<group>"; };
+		76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		76DA28161DC72914005C9F69 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		76DA281B1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+SQRLVersionExtensions.h"; sourceTree = "<group>"; };
+		76DA281C1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+SQRLVersionExtensions.m"; sourceTree = "<group>"; };
+		76DA28221DC72E65005C9F69 /* SQRLZipArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLZipArchiver.h; sourceTree = "<group>"; };
+		76DA28231DC72E65005C9F69 /* SQRLZipArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLZipArchiver.m; sourceTree = "<group>"; };
+		76DA28261DC72E95005C9F69 /* SQRLShipItLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLShipItLauncher.h; sourceTree = "<group>"; };
+		76DA28271DC72E95005C9F69 /* SQRLShipItLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLShipItLauncher.m; sourceTree = "<group>"; };
+		76DA282B1DC72FB9005C9F69 /* ShipIt-main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ShipIt-main.m"; path = "SnowInjury/ShipIt-main.m"; sourceTree = "<group>"; };
+		76DA282C1DC72FB9005C9F69 /* SQRLInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLInstaller.h; path = SnowInjury/SQRLInstaller.h; sourceTree = "<group>"; };
+		76DA282D1DC72FB9005C9F69 /* SQRLInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLInstaller.m; path = SnowInjury/SQRLInstaller.m; sourceTree = "<group>"; };
+		76DA282E1DC72FB9005C9F69 /* SQRLInstaller+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SQRLInstaller+Private.h"; path = "SnowInjury/SQRLInstaller+Private.h"; sourceTree = "<group>"; };
+		76DA282F1DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLInstallerOwnedBundle.h; path = SnowInjury/SQRLInstallerOwnedBundle.h; sourceTree = "<group>"; };
+		76DA28301DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLInstallerOwnedBundle.m; path = SnowInjury/SQRLInstallerOwnedBundle.m; sourceTree = "<group>"; };
+		76DA28311DC72FB9005C9F69 /* SQRLTerminationListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLTerminationListener.h; path = SnowInjury/SQRLTerminationListener.h; sourceTree = "<group>"; };
+		76DA28321DC72FB9005C9F69 /* SQRLTerminationListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLTerminationListener.m; path = SnowInjury/SQRLTerminationListener.m; sourceTree = "<group>"; };
+		76DA283B1DC7301B005C9F69 /* SQRLDownloadedUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLDownloadedUpdate.h; sourceTree = "<group>"; };
+		76DA283C1DC7301B005C9F69 /* SQRLDownloadedUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLDownloadedUpdate.m; sourceTree = "<group>"; };
+		76DA283D1DC7301B005C9F69 /* SQRLUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLUpdate.h; sourceTree = "<group>"; };
+		76DA283E1DC7301B005C9F69 /* SQRLUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLUpdate.m; sourceTree = "<group>"; };
+		76DA283F1DC7301B005C9F69 /* SQRLUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRLUpdater.h; sourceTree = "<group>"; };
+		76DA28401DC7301B005C9F69 /* SQRLUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRLUpdater.m; sourceTree = "<group>"; };
+		76DA284D1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+SQRLVersionExtensions.h"; path = "SnowInjury/NSBundle+SQRLVersionExtensions.h"; sourceTree = "<group>"; };
+		76DA284E1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+SQRLVersionExtensions.m"; path = "SnowInjury/NSBundle+SQRLVersionExtensions.m"; sourceTree = "<group>"; };
+		76DA284F1DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+SQRLVerbosityExtensions.h"; path = "SnowInjury/NSError+SQRLVerbosityExtensions.h"; sourceTree = "<group>"; };
+		76DA28501DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+SQRLVerbosityExtensions.m"; path = "SnowInjury/NSError+SQRLVerbosityExtensions.m"; sourceTree = "<group>"; };
+		76DA28551DC7311E005C9F69 /* SQRLCodeSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLCodeSignature.h; path = SnowInjury/SQRLCodeSignature.h; sourceTree = "<group>"; };
+		76DA28561DC7311E005C9F69 /* SQRLCodeSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLCodeSignature.m; path = SnowInjury/SQRLCodeSignature.m; sourceTree = "<group>"; };
+		76DA28591DC7314F005C9F69 /* SQRLDirectoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLDirectoryManager.h; path = SnowInjury/SQRLDirectoryManager.h; sourceTree = "<group>"; };
+		76DA285A1DC7314F005C9F69 /* SQRLDirectoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLDirectoryManager.m; path = SnowInjury/SQRLDirectoryManager.m; sourceTree = "<group>"; };
+		76DA285B1DC7314F005C9F69 /* SQRLShipItRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLShipItRequest.h; path = SnowInjury/SQRLShipItRequest.h; sourceTree = "<group>"; };
+		76DA285C1DC7314F005C9F69 /* SQRLShipItRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLShipItRequest.m; path = SnowInjury/SQRLShipItRequest.m; sourceTree = "<group>"; };
+		76DA28621DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RACSignal+SQRLTransactionExtensions.h"; path = "SnowInjury/RACSignal+SQRLTransactionExtensions.h"; sourceTree = "<group>"; };
+		76DA28631DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+SQRLTransactionExtensions.m"; path = "SnowInjury/RACSignal+SQRLTransactionExtensions.m"; sourceTree = "<group>"; };
+		76DA28661DC73197005C9F69 /* SQRLAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQRLAuthorization.h; path = SnowInjury/SQRLAuthorization.h; sourceTree = "<group>"; };
+		76DA28671DC73197005C9F69 /* SQRLAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQRLAuthorization.m; path = SnowInjury/SQRLAuthorization.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76DA28021DC7267E005C9F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DA28171DC72914005C9F69 /* Result.framework in Frameworks */,
+				7646613C1DC734B0005BB2EB /* OHHTTPStubs.framework in Frameworks */,
+				76DA28131DC72903005C9F69 /* Mantle.framework in Frameworks */,
+				76DA28151DC7290C005C9F69 /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76DA27FC1DC7267E005C9F69 = {
+			isa = PBXGroup;
+			children = (
+				76DA28471DC73097005C9F69 /* Shared */,
+				76DA282A1DC72EB7005C9F69 /* ShipIt */,
+				76DA28111DC728CD005C9F69 /* FrameWork */,
+				76DA28081DC7267E005C9F69 /* SnowInjury */,
+				76DA28071DC7267E005C9F69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76DA28071DC7267E005C9F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28061DC7267E005C9F69 /* SnowInjury.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76DA28081DC7267E005C9F69 /* SnowInjury */ = {
+			isa = PBXGroup;
+			children = (
+				76DA281A1DC72A4B005C9F69 /* Supporting Files */,
+				76DA28191DC72A3F005C9F69 /* Classes */,
+				76DA28181DC72A26005C9F69 /* Extensions */,
+				76DA28091DC7267E005C9F69 /* SnowInjury.h */,
+			);
+			path = SnowInjury;
+			sourceTree = "<group>";
+		};
+		76DA28111DC728CD005C9F69 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				7646613B1DC734B0005BB2EB /* OHHTTPStubs.framework */,
+				76DA28161DC72914005C9F69 /* Result.framework */,
+				76DA28141DC7290C005C9F69 /* ReactiveCocoa.framework */,
+				76DA28121DC72903005C9F69 /* Mantle.framework */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+		76DA28181DC72A26005C9F69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76DA281B1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.h */,
+				76DA281C1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		76DA28191DC72A3F005C9F69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28211DC72E4C005C9F69 /* Updates */,
+				76DA28201DC72E40005C9F69 /* IPC */,
+				76DA281F1DC72E17005C9F69 /* Archives */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		76DA281A1DC72A4B005C9F69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76DA280A1DC7267E005C9F69 /* Info.plist */,
+				7646613D1DC7358C005BB2EB /* SnowInjury.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76DA281F1DC72E17005C9F69 /* Archives */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28221DC72E65005C9F69 /* SQRLZipArchiver.h */,
+				76DA28231DC72E65005C9F69 /* SQRLZipArchiver.m */,
+			);
+			name = Archives;
+			sourceTree = "<group>";
+		};
+		76DA28201DC72E40005C9F69 /* IPC */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28261DC72E95005C9F69 /* SQRLShipItLauncher.h */,
+				76DA28271DC72E95005C9F69 /* SQRLShipItLauncher.m */,
+			);
+			name = IPC;
+			sourceTree = "<group>";
+		};
+		76DA28211DC72E4C005C9F69 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				76DA283B1DC7301B005C9F69 /* SQRLDownloadedUpdate.h */,
+				76DA283C1DC7301B005C9F69 /* SQRLDownloadedUpdate.m */,
+				76DA283D1DC7301B005C9F69 /* SQRLUpdate.h */,
+				76DA283E1DC7301B005C9F69 /* SQRLUpdate.m */,
+				76DA283F1DC7301B005C9F69 /* SQRLUpdater.h */,
+				76DA28401DC7301B005C9F69 /* SQRLUpdater.m */,
+			);
+			name = Updates;
+			sourceTree = "<group>";
+		};
+		76DA282A1DC72EB7005C9F69 /* ShipIt */ = {
+			isa = PBXGroup;
+			children = (
+				76DA282B1DC72FB9005C9F69 /* ShipIt-main.m */,
+				76DA282C1DC72FB9005C9F69 /* SQRLInstaller.h */,
+				76DA282D1DC72FB9005C9F69 /* SQRLInstaller.m */,
+				76DA282E1DC72FB9005C9F69 /* SQRLInstaller+Private.h */,
+				76DA282F1DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.h */,
+				76DA28301DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.m */,
+				76DA28311DC72FB9005C9F69 /* SQRLTerminationListener.h */,
+				76DA28321DC72FB9005C9F69 /* SQRLTerminationListener.m */,
+			);
+			name = ShipIt;
+			sourceTree = "<group>";
+		};
+		76DA28471DC73097005C9F69 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				76DA284C1DC730D7005C9F69 /* Authorization */,
+				76DA284B1DC730CE005C9F69 /* Transactions */,
+				76DA284A1DC730C5005C9F69 /* State */,
+				76DA28491DC730B2005C9F69 /* Code Signing */,
+				76DA28481DC730AD005C9F69 /* Extensions */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		76DA28481DC730AD005C9F69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76DA284D1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.h */,
+				76DA284E1DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.m */,
+				76DA284F1DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.h */,
+				76DA28501DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		76DA28491DC730B2005C9F69 /* Code Signing */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28551DC7311E005C9F69 /* SQRLCodeSignature.h */,
+				76DA28561DC7311E005C9F69 /* SQRLCodeSignature.m */,
+			);
+			name = "Code Signing";
+			sourceTree = "<group>";
+		};
+		76DA284A1DC730C5005C9F69 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28591DC7314F005C9F69 /* SQRLDirectoryManager.h */,
+				76DA285A1DC7314F005C9F69 /* SQRLDirectoryManager.m */,
+				76DA285B1DC7314F005C9F69 /* SQRLShipItRequest.h */,
+				76DA285C1DC7314F005C9F69 /* SQRLShipItRequest.m */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		76DA284B1DC730CE005C9F69 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28621DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.h */,
+				76DA28631DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.m */,
+			);
+			name = Transactions;
+			sourceTree = "<group>";
+		};
+		76DA284C1DC730D7005C9F69 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				76DA28661DC73197005C9F69 /* SQRLAuthorization.h */,
+				76DA28671DC73197005C9F69 /* SQRLAuthorization.m */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76DA28031DC7267E005C9F69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DA28571DC7311E005C9F69 /* SQRLCodeSignature.h in Headers */,
+				76DA28511DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.h in Headers */,
+				76DA28681DC73197005C9F69 /* SQRLAuthorization.h in Headers */,
+				76DA281D1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.h in Headers */,
+				76DA28451DC7301B005C9F69 /* SQRLUpdater.h in Headers */,
+				76DA28391DC72FB9005C9F69 /* SQRLTerminationListener.h in Headers */,
+				76DA285F1DC7314F005C9F69 /* SQRLShipItRequest.h in Headers */,
+				76DA28371DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.h in Headers */,
+				76DA280B1DC7267E005C9F69 /* SnowInjury.h in Headers */,
+				76DA285D1DC7314F005C9F69 /* SQRLDirectoryManager.h in Headers */,
+				76DA28241DC72E65005C9F69 /* SQRLZipArchiver.h in Headers */,
+				76DA28361DC72FB9005C9F69 /* SQRLInstaller+Private.h in Headers */,
+				76DA28531DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.h in Headers */,
+				76DA28411DC7301B005C9F69 /* SQRLDownloadedUpdate.h in Headers */,
+				76DA28341DC72FB9005C9F69 /* SQRLInstaller.h in Headers */,
+				7646613E1DC7358C005BB2EB /* SnowInjury.pch in Headers */,
+				76DA28281DC72E95005C9F69 /* SQRLShipItLauncher.h in Headers */,
+				76DA28641DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.h in Headers */,
+				76DA28431DC7301B005C9F69 /* SQRLUpdate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		76DA28051DC7267E005C9F69 /* SnowInjury */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76DA280E1DC7267E005C9F69 /* Build configuration list for PBXNativeTarget "SnowInjury" */;
+			buildPhases = (
+				76DA28011DC7267E005C9F69 /* Sources */,
+				76DA28021DC7267E005C9F69 /* Frameworks */,
+				76DA28031DC7267E005C9F69 /* Headers */,
+				76DA28041DC7267E005C9F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnowInjury;
+			productName = SnowInjury;
+			productReference = 76DA28061DC7267E005C9F69 /* SnowInjury.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76DA27FD1DC7267E005C9F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = davkas;
+				TargetAttributes = {
+					76DA28051DC7267E005C9F69 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 76DA28001DC7267E005C9F69 /* Build configuration list for PBXProject "SnowInjury" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76DA27FC1DC7267E005C9F69;
+			productRefGroup = 76DA28071DC7267E005C9F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76DA28051DC7267E005C9F69 /* SnowInjury */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76DA28041DC7267E005C9F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76DA28011DC7267E005C9F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76DA281E1DC72AE6005C9F69 /* NSProcessInfo+SQRLVersionExtensions.m in Sources */,
+				76DA28251DC72E65005C9F69 /* SQRLZipArchiver.m in Sources */,
+				76DA28381DC72FB9005C9F69 /* SQRLInstallerOwnedBundle.m in Sources */,
+				76DA28461DC7301B005C9F69 /* SQRLUpdater.m in Sources */,
+				76DA28291DC72E95005C9F69 /* SQRLShipItLauncher.m in Sources */,
+				76DA28351DC72FB9005C9F69 /* SQRLInstaller.m in Sources */,
+				76DA283A1DC72FB9005C9F69 /* SQRLTerminationListener.m in Sources */,
+				76DA28651DC7317E005C9F69 /* RACSignal+SQRLTransactionExtensions.m in Sources */,
+				76DA28331DC72FB9005C9F69 /* ShipIt-main.m in Sources */,
+				76DA28441DC7301B005C9F69 /* SQRLUpdate.m in Sources */,
+				76DA28691DC73197005C9F69 /* SQRLAuthorization.m in Sources */,
+				76DA28541DC73102005C9F69 /* NSError+SQRLVerbosityExtensions.m in Sources */,
+				76DA28581DC7311E005C9F69 /* SQRLCodeSignature.m in Sources */,
+				76DA285E1DC7314F005C9F69 /* SQRLDirectoryManager.m in Sources */,
+				76DA28421DC7301B005C9F69 /* SQRLDownloadedUpdate.m in Sources */,
+				76DA28521DC73102005C9F69 /* NSBundle+SQRLVersionExtensions.m in Sources */,
+				76DA28601DC7314F005C9F69 /* SQRLShipItRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76DA280C1DC7267E005C9F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76DA280D1DC7267E005C9F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76DA280F1DC7267E005C9F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				INFOPLIST_FILE = SnowInjury/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.davkas.SnowInjury;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		76DA28101DC7267E005C9F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SnowInjury/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.davkas.SnowInjury;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76DA28001DC7267E005C9F69 /* Build configuration list for PBXProject "SnowInjury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76DA280C1DC7267E005C9F69 /* Debug */,
+				76DA280D1DC7267E005C9F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76DA280E1DC7267E005C9F69 /* Build configuration list for PBXNativeTarget "SnowInjury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76DA280F1DC7267E005C9F69 /* Debug */,
+				76DA28101DC7267E005C9F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76DA27FD1DC7267E005C9F69 /* Project object */;
+}
